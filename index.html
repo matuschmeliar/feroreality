@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FERO — Backoffice pre realitky, ktorý vám prácu uberie</title>
+  <meta name="description" content="Staviame backoffice pre slovenské realitky, ktorý vám prácu uberie. Pridajte sa na zoznam a získajte 30 % zľavu navždy." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─────────────────────────────  NAV  ───────────────────────────── -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="FERO domov">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 11.5L12 4l9 7.5"/>
+          <path d="M5 10v10h14V10"/>
+        </svg>
+        <span>FERO</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#painy">Problémy</a>
+        <a href="#predstavte">Ako to bude</a>
+        <a href="#staviame">Čo staviame</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#waitlist" class="btn btn--dark btn--sm">Pridať sa na zoznam</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ─────────────────────  1. HERO  ───────────────────── -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <span class="pill">PRE REALITNÉ KANCELÁRIE</span>
+          <h1 class="h1">Prestaňte bojovať so svojím <span class="u">systémom</span>.</h1>
+          <p class="lead">Staviame backoffice, ktorý vám prácu uberie — nie pridá. Spolu s realitkami, ktoré ho budú používať.</p>
+          <div class="hero__cta">
+            <a href="#waitlist" class="btn btn--yellow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+              Chcem byť pri tom
+            </a>
+            <a href="#staviame" class="btn btn--ghost">Ako to funguje?</a>
+          </div>
+          <p class="hero__sub">Za 30 minút rozhovoru získate prvých <strong>6 mesiacov zadarmo</strong>.</p>
+        </div>
+
+        <aside class="app-preview" aria-label="Náhľad backofficu FERO">
+          <div class="app-preview__chrome">
+            <span class="app-preview__dot" style="background:#FF5F57"></span>
+            <span class="app-preview__dot" style="background:#FEBC2E"></span>
+            <span class="app-preview__dot" style="background:#28C840"></span>
+            <div class="app-preview__url">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              app.feroreality.sk / leady
+            </div>
+            <span class="app-preview__live">LIVE</span>
+          </div>
+
+          <div class="app-preview__body">
+            <nav class="app-preview__nav" aria-hidden="true">
+              <div class="app-preview__brand">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5L12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+                FERO
+              </div>
+              <ul>
+                <li><span class="dot"></span>Dashboard</li>
+                <li class="is-active"><span class="dot"></span>Leady<em>12</em></li>
+                <li><span class="dot"></span>Ponuky</li>
+                <li><span class="dot"></span>Obhliadky</li>
+                <li><span class="dot"></span>Klienti</li>
+                <li><span class="dot"></span>Kalendár</li>
+                <li><span class="dot"></span>Štatistiky</li>
+              </ul>
+              <div class="app-preview__user">
+                <span class="avatar">M</span>
+                <div>
+                  <strong>Matúš H.</strong>
+                  <small>Realitka XYZ</small>
+                </div>
+              </div>
+            </nav>
+
+            <div class="app-preview__main">
+              <div class="app-preview__topbar">
+                <h4>Leady · dnes</h4>
+                <div class="app-preview__filters">
+                  <span class="chip chip--active">Všetky 12</span>
+                  <span class="chip">Nové 4</span>
+                  <span class="chip">Odpovedané 8</span>
+                </div>
+              </div>
+
+              <ul class="app-preview__list">
+                <li class="lead-row">
+                  <span class="lead-row__avatar" style="background:#FFD400">JK</span>
+                  <div class="lead-row__info">
+                    <strong>Jana Kováčová</strong>
+                    <span>3-izbový · Bratislava · 245 000 €</span>
+                  </div>
+                  <div class="lead-row__meta">
+                    <span class="badge badge--success">Odp. 47s</span>
+                    <small>nehnutelnosti.sk</small>
+                  </div>
+                </li>
+
+                <li class="lead-row">
+                  <span class="lead-row__avatar" style="background:#EAF5FF;color:#0A66C2">PB</span>
+                  <div class="lead-row__info">
+                    <strong>Peter Belica</strong>
+                    <span>Garsónka · Žilina · 89 000 €</span>
+                  </div>
+                  <div class="lead-row__meta">
+                    <span class="badge badge--success">Odp. 1m 12s</span>
+                    <small>reality.sk</small>
+                  </div>
+                </li>
+
+                <li class="lead-row lead-row--current">
+                  <span class="lead-row__avatar" style="background:#FFE9E5;color:#C03A1F">SR</span>
+                  <div class="lead-row__info">
+                    <strong>Silvia Rusnák<span class="pulse"></span></strong>
+                    <span>Rodinný dom · Nitra · 320 000 €</span>
+                  </div>
+                  <div class="lead-row__meta">
+                    <span class="badge badge--wait">AI píše…</span>
+                    <small>WhatsApp</small>
+                  </div>
+                </li>
+
+                <li class="lead-row">
+                  <span class="lead-row__avatar" style="background:#F0EAFF;color:#5A2EAF">MK</span>
+                  <div class="lead-row__info">
+                    <strong>Marek Kollár</strong>
+                    <span>2-izbový · Trnava · 165 000 €</span>
+                  </div>
+                  <div class="lead-row__meta">
+                    <span class="badge badge--cal">Obhliadka 16:30</span>
+                    <small>Facebook</small>
+                  </div>
+                </li>
+
+                <li class="lead-row">
+                  <span class="lead-row__avatar" style="background:#E6F7EC;color:#1FAE5C">LD</span>
+                  <div class="lead-row__info">
+                    <strong>Lucia Demková</strong>
+                    <span>4-izbový · Košice · 198 000 €</span>
+                  </div>
+                  <div class="lead-row__meta">
+                    <span class="badge badge--success">Odp. 32s</span>
+                    <small>topreality.sk</small>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="app-preview__stat">
+                <div>
+                  <strong>90 s</strong>
+                  <small>priemerná odpoveď</small>
+                </div>
+                <div>
+                  <strong>12</strong>
+                  <small>leadov dnes</small>
+                </div>
+                <div>
+                  <strong>3</strong>
+                  <small>obhliadky zarezervované</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="trust">
+        <p class="trust__label">Konkurencia, ktorú nahrádzame</p>
+        <div class="trust__row">
+          <div class="trust__logo"><span>Realsoft</span><small>zanikol 2025</small></div>
+          <div class="trust__logo"><span>backOFFICE</span><small>databáza z 2010</small></div>
+          <div class="trust__logo"><span>Nehnuteľnosti Admin</span><small>chýba podstata</small></div>
+          <div class="trust__logo"><span>Igluu / TyrionReal</span><small>nie pre SK realitu</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  2. PAINY  ───────────────── -->
+    <section id="painy" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="pill">Poznáte to?</span>
+          <h2 class="h2">Niečo z toho vám znie povedome?</h2>
+          <p class="lead lead--center">Nie ste sami. Osem z desiatich majiteľov realitiek na Slovensku je nespokojných so svojím systémom. Tu je dôvod.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="pain">
+            <div class="pain__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            </div>
+            <h3>Portál vám vypol export. Zostali ste trčať.</h3>
+            <p>Realsoft to zažil dvakrát. V roku 2013 prišiel o nehnutelnosti.sk. V roku 2025 zanikol úplne. Vaše dáta, ich pravidlá.</p>
+          </article>
+
+          <article class="pain">
+            <div class="pain__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Kým otvoríte mail, lead už volá konkurencii.</h3>
+            <p>Systém vám pošle notifikáciu. Konkurencia má odpoveď do dvoch minút. Práve tu sa stráca 60 % leadov.</p>
+          </article>
+
+          <article class="pain">
+            <div class="pain__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+            </div>
+            <h3>AML, GDPR, kataster, zmluvy. Hodina denne preč.</h3>
+            <p>A od januára 2026 ešte aj eKasa. Žiaden slovenský systém to nemá poriadne vyriešené.</p>
+          </article>
+
+          <article class="pain">
+            <div class="pain__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/><path d="M9 11l1.5 1.5L15 8"/></svg>
+            </div>
+            <h3>Po migrácii Realsoftu zmizli stavy „predané“ a „rezervované“.</h3>
+            <p>Rozbité integrácie. Support odpovedá robotom. To nie je modernizácia.</p>
+          </article>
+
+          <article class="pain">
+            <div class="pain__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/><circle cx="12" cy="13" r="2"/></svg>
+            </div>
+            <h3>AI vám napíše inzerát. Pekné.</h3>
+            <p>Vonku už AI dvíha hovory cez víkend. Slovenský backoffice je hrdý na generovanie textu.</p>
+          </article>
+
+          <article class="pain">
+            <div class="pain__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h.01M7 17h.01"/></svg>
+            </div>
+            <h3>Platíte za päť nástrojov. Ani polovica spolu nehovorí.</h3>
+            <p>Backoffice, fakturácia, CRM, SMS, podpisy. Päť účtov, päť faktúr, jeden chaos.</p>
+          </article>
+        </div>
+
+        <div class="section__foot">
+          <p>Trápi vás čo i len jedna z týchto vecí? Tak to poďme spraviť inak.</p>
+          <a href="#waitlist" class="btn btn--yellow">Chcem byť pri tom</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  3. PREDSTAVTE SI  ───────────────── -->
+    <section id="predstavte" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <span class="pill">Takto to bude</span>
+          <h2 class="h2">Predstavte si normálny pracovný deň.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="moment">
+            <div class="moment__time">8:00</div>
+            <h3>Ráno v kancelárii</h3>
+            <p>Cez noc prišlo dvanásť leadov. Všetkých dvanásť už dostalo odpoveď do 90 sekúnd. Traja si rovno zarezervovali obhliadku. Stihnete si dať kávu.</p>
+          </article>
+
+          <article class="moment">
+            <div class="moment__time">11:30</div>
+            <h3>Po obhliadke</h3>
+            <p>Dve minúty nahlas nadiktujete poznámky. AI z nich spraví popis. Naceníte byt porovnaním s tridsiatimi podobnými v okolí. Klient podpíše rezervačku mobilom — ešte stojí v tom byte.</p>
+          </article>
+
+          <article class="moment">
+            <div class="moment__time">14:00</div>
+            <h3>Kataster opäť padol</h3>
+            <p>Váš systém pracuje z výpisov, ktoré stiahol ráno. Obchody bežia. Klienti nestresujú.</p>
+          </article>
+
+          <article class="moment">
+            <div class="moment__time">18:00</div>
+            <h3>Pondelok večer</h3>
+            <p>Otvoríte dashboard. Vidíte, ktorý maklér koľko uzavrel. Vidíte, ktorý portál vám zarába a ktorý okráda. Žiaden Excel.</p>
+          </article>
+        </div>
+
+        <div class="section__foot">
+          <a href="#waitlist" class="btn btn--yellow">Chcem to mať</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  4. ČO STAVIAME  ───────────────── -->
+    <section id="staviame" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="pill">Čo staviame</span>
+          <h2 class="h2">Postavené pre rok 2026. Nie pre 2010.</h2>
+        </div>
+
+        <div class="features">
+          <article class="feature">
+            <div class="feature__num">01</div>
+            <div class="feature__body">
+              <h3>Vaša databáza je vaša. Bodka.</h3>
+              <p>Žiadne uzamknutie do jedného portálu. Žiadne výhražné maily o konci servera. Otvorené API od prvého dňa. Celú databázu vyexportujete jedným klikom.</p>
+              <p class="feature__note">Keď sa raz rozhodnete odísť, odídete so všetkým. Máte to čierne na bielom v zmluve.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__num">02</div>
+            <div class="feature__body">
+              <h3>Lead dostane odpoveď za 90 sekúnd. Bez vás.</h3>
+              <p>Lead príde z nehnutelnosti.sk, reality.sk, Facebooku, vášho webu. Systém okamžite odpovie cez SMS, WhatsApp alebo chat. Zistí, o čo ide. Ponúkne termín z vášho kalendára.</p>
+              <p class="feature__note">Vy dostanete lead, keď je už zahriaty.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__num">03</div>
+            <div class="feature__body">
+              <h3>Rezervačka podpísaná počas obhliadky.</h3>
+              <p>Žiadne tlačenie. Žiadne skenovanie. Žiadne posielanie mailom. Klient sa prihlási cez slovenský eID alebo Mobile ID a podpíše. Trvá to minútu. Plne v súlade so zákonom.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature__num">04</div>
+            <div class="feature__body">
+              <h3>AI, ktoré vám naozaj uberie prácu.</h3>
+              <p>Nadiktujete poznámky po obhliadke — AI spraví follow-up úlohy aj draft mailu. Pred podpisom vám ukáže nezvyčajné klauzuly v zmluve. Z prázdneho bytu spraví tri varianty zariadenia. V noci odpovie leadu za vás.</p>
+              <p class="feature__note">AI nenahradí makléra. Robí len to, čo aj tak robíte ručne — len rýchlejšie.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__foot">
+          <a href="#waitlist" class="btn btn--yellow">Chcem byť pri tom</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  5. PRE KOHO NIE SME  ───────────────── -->
+    <section class="section section--alt">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <span class="pill">Úprimne</span>
+          <h2 class="h2">Pre koho nie sme.</h2>
+          <p class="lead lead--center">Buďme úprimní. Nie sme pre každého.</p>
+        </div>
+
+        <ul class="nots">
+          <li>
+            <span class="nots__x">✕</span>
+            <div>
+              <strong>Ak vám stačí jeden inzerát mesačne na Bazoš.</strong>
+              <p>Pre vás sme zbytočne veľký nástroj.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nots__x">✕</span>
+            <div>
+              <strong>Ak chcete ostať pri papieri a Exceli.</strong>
+              <p>Nezachránime biznis, ktorý sa nechce digitalizovať.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nots__x">✕</span>
+            <div>
+              <strong>Ak vás bavia hodinové telefonáty s helpdeskom.</strong>
+              <p>Toto je early access. Nesľubujeme, že všetko klapne na prvýkrát.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="section__foot">
+          <p>Našli ste sa? Ďakujeme za čas. Nenašli? Tak poďte.</p>
+          <a href="#waitlist" class="btn btn--yellow">Toto som ja — chcem byť pri tom</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  6. AKO TO BUDUJEME  ───────────────── -->
+    <section id="roadmap" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="pill">Ako to budujeme</span>
+          <h2 class="h2">Nestaviame to v garáži.<br/>Staviame to s realitkami.</h2>
+        </div>
+
+        <ol class="roadmap">
+          <li class="roadmap__item roadmap__item--current">
+            <div class="roadmap__q">Q2 2026</div>
+            <h3>Prieskum</h3>
+            <p>Hĺbkové rozhovory s vyše tridsiatimi majiteľmi realitiek. Z nich rastie produkt.</p>
+            <span class="tag">Práve sme tu</span>
+          </li>
+          <li class="roadmap__item">
+            <div class="roadmap__q">Q3 2026</div>
+            <h3>Design partneri</h3>
+            <p>Vyberáme desať realitiek. Spoločne staviame, týždeň po týždni.</p>
+          </li>
+          <li class="roadmap__item">
+            <div class="roadmap__q">Q4 2026</div>
+            <h3>Closed beta</h3>
+            <p>Prví zo zoznamu dostávajú prístup. Migrácia z backOFFICE aj Nehnuteľnosti Admin.</p>
+          </li>
+          <li class="roadmap__item">
+            <div class="roadmap__q">Q1 2027</div>
+            <h3>Launch</h3>
+            <p>S overeným produktom a komunitou prvých päťdesiatich realitiek.</p>
+          </li>
+        </ol>
+
+        <div class="perks">
+          <h3 class="perks__title">Čo získate ako člen zoznamu</h3>
+          <ul class="perks__list">
+            <li><span class="check">✓</span><div><strong>30 % zľavu navždy</strong> — pre prvých 100 klientov</div></li>
+            <li><span class="check">✓</span><div><strong>Prioritný onboarding</strong> — migráciu spravíme za vás</div></li>
+            <li><span class="check">✓</span><div><strong>Hlas v roadmape</strong> — raz mesačne rozhodujeme, čo postaviť ďalej</div></li>
+            <li><span class="check">✓</span><div><strong>Report zo zákulisia</strong> — skutočný progres, žiadne PR maily</div></li>
+            <li><span class="check">✓</span><div><strong>Nulové riziko</strong> — žiadna kreditka, žiadny záväzok</div></li>
+          </ul>
+        </div>
+
+        <div class="section__foot">
+          <a href="#waitlist" class="btn btn--yellow">Chcem byť pri tom</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  7. WAITLIST FORM  ───────────────── -->
+    <section id="waitlist" class="section section--alt">
+      <div class="container">
+        <div class="form-grid">
+          <div class="form-grid__left">
+            <span class="pill">Pridajte sa</span>
+            <h2 class="h2">Pridajte sa na zoznam.</h2>
+            <p class="lead">Spúšťame v Q4 2026. Nechajte nám 30 sekúnd a buďte pri tom od začiatku.</p>
+            <ul class="ticks">
+              <li><span class="check">✓</span>30 % zľava navždy</li>
+              <li><span class="check">✓</span>Prioritný onboarding</li>
+              <li><span class="check">✓</span>Reálny vplyv na produkt</li>
+              <li><span class="check">✓</span>Viete o ňom skôr ako konkurencia</li>
+            </ul>
+          </div>
+
+          <form class="form" id="waitlistForm" novalidate>
+            <!-- honeypot — hidden from users, fooled by bots -->
+            <div style="position:absolute;left:-9999px" aria-hidden="true">
+              <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"/></label>
+            </div>
+            <div class="form__row">
+              <label class="field">
+                <span>Meno *</span>
+                <input type="text" name="name" required placeholder="Ferko Mrkvička" />
+              </label>
+              <label class="field">
+                <span>Email *</span>
+                <input type="email" name="email" required placeholder="ferko@realitka.sk" />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label class="field">
+                <span>Telefón <em>(voliteľné — ozveme sa rýchlejšie)</em></span>
+                <input type="tel" name="phone" placeholder="0944 485 495" />
+              </label>
+              <label class="field">
+                <span>Realitná kancelária *</span>
+                <input type="text" name="company" required placeholder="napr. Realitka XYZ" />
+              </label>
+            </div>
+
+            <fieldset class="field">
+              <legend>Koľko vás je? *</legend>
+              <div class="radios">
+                <label><input type="radio" name="size" value="solo" required /><span>Solo maklér</span></label>
+                <label><input type="radio" name="size" value="2-5" /><span>2–5</span></label>
+                <label><input type="radio" name="size" value="6-15" /><span>6–15</span></label>
+                <label><input type="radio" name="size" value="16-50" /><span>16–50</span></label>
+                <label><input type="radio" name="size" value="50+" /><span>50+</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field">
+              <legend>Aký systém teraz používate? *</legend>
+              <div class="radios radios--grid">
+                <label><input type="radio" name="system" value="backOFFICE" required /><span>backOFFICE</span></label>
+                <label><input type="radio" name="system" value="Nehnuteľnosti Admin" /><span>Nehnuteľnosti Admin</span></label>
+                <label><input type="radio" name="system" value="Realsoft" /><span>Realsoft</span></label>
+                <label><input type="radio" name="system" value="Igluu" /><span>Igluu</span></label>
+                <label><input type="radio" name="system" value="iný-tyrion" /><span>TyrionReal / easyReal / iný</span></label>
+                <label><input type="radio" name="system" value="excel" /><span>Žiaden — Excel</span></label>
+              </div>
+            </fieldset>
+
+            <label class="field">
+              <span>Čo vás na ňom najviac štve? *</span>
+              <textarea name="pain" rows="3" required placeholder="Napíšte úprimne — to nám pomáha najviac."></textarea>
+            </label>
+
+            <label class="field">
+              <span>Ako ste nás našli?</span>
+              <select name="source">
+                <option value="">Vyberte zo zoznamu…</option>
+                <option>Odporúčanie</option>
+                <option>Facebook / Instagram</option>
+                <option>LinkedIn</option>
+                <option>Google</option>
+                <option>Realitná akcia</option>
+                <option>Inak</option>
+              </select>
+            </label>
+
+            <label class="check-row">
+              <input type="checkbox" name="gdpr" required />
+              <span>Súhlasím so spracovaním údajov (GDPR).</span>
+            </label>
+
+            <label class="check-row check-row--bonus">
+              <input type="checkbox" name="interview" />
+              <span>Chcem 30-min rozhovor o svojich potrebách <em>→ bonus: 6 mesiacov zadarmo</em></span>
+            </label>
+
+            <button type="submit" class="btn btn--yellow btn--block">
+              Pridať ma na zoznam
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+            </button>
+            <p class="form__foot">Žiadna kreditka. Žiadny záväzok. Email si overíme do 24 hodín.</p>
+
+            <div class="form__success" id="formSuccess" hidden>
+              <strong>Ste #<span id="queueNumber">48</span> v poradí.</strong>
+              <p>Email si overíme do 24 hodín. Ak ste chceli rozhovor, ozveme sa do troch dní s termínom.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  8. FAQ  ───────────────── -->
+    <section id="faq" class="section">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <span class="pill">FAQ</span>
+          <h2 class="h2">Časté otázky</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Kedy to spúšťate?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Closed beta Q4 2026. Verejný launch Q1 2027. Žiadne „už čoskoro“. Ak budeme meškať, povieme to.</p>
+          </details>
+          <details>
+            <summary>Prečo mám čakať a neísť do Igluu alebo Nehnuteľnosti Admin?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Ak vám váš systém vyhovuje, neskáčte. Sme pre realitky, ktoré v aktuálnom systéme strácajú peniaze alebo trpia. Ak ste jednou z nich — počkajte nás.</p>
+          </details>
+          <details>
+            <summary>Koľko to bude stáť?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Cieľ je 19 € za makléra mesačne pre malé realitky, 39 € pre väčšie tímy. Členovia zoznamu majú 30 % zľavu navždy. Žiaden poplatok za spustenie.</p>
+          </details>
+          <details>
+            <summary>Funguje prechod z backOFFICE alebo Nehnuteľnosti Admin?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Áno, spravíme ho za vás. Zachováme stavy ponúk, klientov, históriu aj ID inzerátov. Prvých 30 dní podpora zdarma.</p>
+          </details>
+          <details>
+            <summary>Sú moje dáta v bezpečí?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Servery v EÚ, GDPR, šifrovanie. A svoje dáta viete kedykoľvek vyexportovať a vziať so sebou. Máte to v zmluve.</p>
+          </details>
+          <details>
+            <summary>Ako viem, že to dotiahnete?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Pri spustení zverejníme tím, financovanie aj roadmapu. Zoznam dostane mesačný update zo zákulisia. Ak nelaunchneme do Q2 2027, každému osobne vysvetlíme prečo.</p>
+          </details>
+          <details>
+            <summary>Som malá realitka, oplatí sa mi to?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Áno. Solo plán je 19 € mesačne. Ak vám ušetrí pár hodín týždenne, vráti sa vám v prvom uzavretom obchode.</p>
+          </details>
+          <details>
+            <summary>Máte inú otázku?<span class="faq__icon" aria-hidden="true">+</span></summary>
+            <p>Napíšte na <a href="mailto:zakladatel@feroreality.sk">zakladatel@feroreality.sk</a> alebo si rezervujte 15 minút.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  9. FOUNDER NOTE  ───────────────── -->
+    <section class="section section--alt">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <span class="pill">Founder note</span>
+          <h2 class="h2">Prečo to robím</h2>
+        </div>
+
+        <div class="founder">
+          <p>Posledný rok som hovoril s vyše štyridsiatimi realitkami na Slovensku.</p>
+          <p>Stretol som ľudí, ktorí milujú svoju prácu a nenávidia svoj systém. Maklérov, čo stratili obchod, lebo lead čakal šesť hodín. Majiteľov, čo platia za päť nástrojov a výkonnosť aj tak vedú v Exceli.</p>
+          <p>Realsoft skončil. Nehnuteľnosti Admin nie je odpoveď. backOFFICE je solídny, ale stojí na databáze z roku 2010.</p>
+          <p><strong>Slovenský trh si zaslúži lepšie.</strong></p>
+          <p>Staviam to, čo by som chcel mať, keby som sám viedol realitku. Otvorené, rýchle, postavené s vami. Ak vás to oslovuje, dajte mi vedieť.</p>
+
+          <div class="founder__sign">
+            <div class="founder__avatar" aria-hidden="true">M</div>
+            <div>
+              <strong>Matúš</strong><br/>
+              <span>zakladateľ · <a href="mailto:zakladatel@feroreality.sk">zakladatel@feroreality.sk</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__foot">
+          <a href="#waitlist" class="btn btn--yellow">Chcem byť pri tom</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────  10. FINAL CTA  ───────────────── -->
+    <section class="cta-final">
+      <div class="container">
+        <h2 class="h2">Stále tu? Tak teraz.</h2>
+        <p class="lead">30 sekúnd. Bez kreditky. Bez záväzku.</p>
+        <a href="#waitlist" class="btn btn--yellow btn--lg">Pridať ma na zoznam</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─────────────────  FOOTER  ───────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="brand brand--light">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5L12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+          <span>FERO</span>
+        </div>
+        <p>Backoffice pre realitky 2026. Staviame to s vami.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Produkt</h4>
+          <a href="#painy">Problémy</a>
+          <a href="#staviame">Čo staviame</a>
+          <a href="#roadmap">Roadmap</a>
+        </div>
+        <div>
+          <h4>Spojiť sa</h4>
+          <a href="#waitlist">Pridať sa</a>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:zakladatel@feroreality.sk">zakladatel@feroreality.sk</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__copy">© 2026 FERO Reality. Všetky práva vyhradené.</div>
+  </footer>
+
+  <!-- ─────────────────  STICKY BAR  ───────────────── -->
+  <div class="sticky-bar" id="stickyBar" hidden>
+    <span><span class="sticky-bar__rocket" aria-hidden="true">🚀</span> Štyridsaťsedem realitiek už čaká</span>
+    <a href="#waitlist" class="btn btn--yellow btn--sm">Chcem byť pri tom</a>
+    <button class="sticky-bar__close" id="stickyClose" aria-label="Zatvoriť">×</button>
+  </div>
+
+  <!-- ─────────────────  EXIT POPUP  ───────────────── -->
+  <div class="popup" id="exitPopup" hidden role="dialog" aria-modal="true" aria-labelledby="exitTitle">
+    <div class="popup__backdrop" data-close></div>
+    <div class="popup__card">
+      <button class="popup__close" data-close aria-label="Zatvoriť">×</button>
+      <h3 id="exitTitle">Počkajte sekundu.</h3>
+      <p>Ste frustrovaný zo svojho systému? Nepotrebujeme váš email. Dajte nám len jednu vec — čo vás najviac štve?</p>
+      <form id="exitForm">
+        <textarea name="exitPain" rows="3" placeholder="Napríklad: kataster padá, support odpovedá robotom…" required></textarea>
+        <button type="submit" class="btn btn--dark btn--block">Poslať</button>
+        <p class="popup__foot">Žiaden email, žiaden spam. Len chceme vedieť, čo vás trápi.</p>
+      </form>
+      <div class="popup__thanks" id="exitThanks" hidden>
+        <strong>Ďakujeme.</strong>
+        <p>To nám reálne pomôže. Ak budete chcieť, môžete sa <a href="#waitlist" data-close>pridať aj na zoznam</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
